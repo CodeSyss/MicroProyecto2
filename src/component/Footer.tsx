@@ -1,5 +1,7 @@
 // import "./styles.css"
 
+// Estoy probando la extension de figma
+
 // export default function FooterPrincipal() {
 //   return (
 //     <div className="footer-principal clip-contents">
