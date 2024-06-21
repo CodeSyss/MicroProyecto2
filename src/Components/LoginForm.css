@@ -13,19 +13,23 @@
     padding: 30px 40px;
 
 }
-.wrapper-out {
-    position: absolute;
-    top: 110px;
-    width: 420px;
+.wrapper .wrapper-out {
+
     background-color: #29CCBA;
     color: white;
     border-radius: 10px 10px 0 0;
-    padding: 15px ;
-
+    margin-left: -40px;
+    margin-top: -30px;
+    margin-right: -40px;
+    margin-bottom: -10px;
 }
-.wrapper-out h1 {
+.wrapper .wrapper-out h1 {
     font-size: 36px;
     text-align: center;
+}
+
+.wrapper .wrapper-out .icon {
+    margin-left: -40px;
 }
 
 

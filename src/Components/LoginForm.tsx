@@ -5,13 +5,13 @@ import { IoIosArrowBack } from "react-icons/io";
 const LoginForm = () => {
     return (
         <>
-        <div className="wrapper-out">
-        <h1> <IoIosArrowBack className="icon"/> <FaUser className="icon"/> Iniciar Sesión</h1>
-            </div>
+        
         <div className="wrapper">
             
             <form action="">
-            
+                <div className="wrapper-out">
+                    <h1> <IoIosArrowBack className="icon"/> <FaUser /> Iniciar Sesión</h1>
+                </div>
                 
                 
                 <div className="input-box">
