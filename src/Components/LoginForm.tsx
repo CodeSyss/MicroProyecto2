@@ -4,10 +4,16 @@ import  {FaUser} from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 const LoginForm = () => {
     return (
+        <>
+        <div className="wrapper-out">
+        <h1> <IoIosArrowBack className="icon"/> <FaUser className="icon"/> Iniciar Sesión</h1>
+            </div>
         <div className="wrapper">
+            
             <form action="">
+            
                 
-                <h1> <IoIosArrowBack className="icon"/> <FaUser className="icon"/> Iniciar Sesión</h1>
+                
                 <div className="input-box">
 
                     <input type="text" placeholder="Email" required/>
@@ -24,9 +30,11 @@ const LoginForm = () => {
                 <div className="register_link">
                     <p>No tienes cuenta?  <a href="#">Registrate</a></p>
                 </div>
+                
             </form>
-        
+            
         </div>
+        </>
     );
     }
 export default LoginForm;
