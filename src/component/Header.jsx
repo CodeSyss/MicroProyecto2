@@ -1,13 +1,13 @@
-import '../assets/styles/header.css';
-import logoMolokai from '../assets/images/Logo Molokai.png';
-import logoUnimet from '../assets/images/LogoUnimet.png';
-import LogoCarrito from '../assets/images/LogoCarrito.png';
-import Usuario from '../assets/images/Usuario.png';
-import Barra from '../assets/images/Barra.png';
+import "../assets/styles/header.css";
+import logoMolokai from "../assets/images/imgHeader/Logo Molokai.png";
+import logoUnimet from "../assets/images/imgHeader/LogoUnimet.png";
+import LogoCarrito from "../assets/images/imgHeader/LogoCarrito.png";
+import Usuario from "../assets/images/imgHeader/Usuario.png";
+import Barra from "../assets/images/imgHeader/Barra.png";
 
 const Header = () => {
   return (
-    <header>
+    <header className="header">
       <div className="top-bar">
         <div className="uni-logo">
           <img src={logoUnimet} alt="Universidad Metropolitana" />
@@ -29,7 +29,9 @@ const Header = () => {
         <nav>
           <a href="#inicio">INICIO</a>
           <a href="#nosotros">NOSOTROS</a>
-          <a href="#menu" className="menu-btn">MENU</a>
+          <a href="#menu" className="menu-btn">
+            MENÚ
+          </a>
         </nav>
         <div className="cart">
           <img src={LogoCarrito} alt="Cart" />

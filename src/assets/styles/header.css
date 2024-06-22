@@ -5,8 +5,16 @@
     font-family: "Inter", sans-serif;
   }
   
-  header {
+
+.header {
     width: 100%;
+    position: fixed; /* Fija el header en la parte superior de la pantalla */
+    top: 0; 
+    z-index: 10;
+    background-image: url('../assets/images/imgBanner/Banner-Poke.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
   }
   
   .top-bar {
@@ -39,13 +47,13 @@
   }
   
   .auth-links .separator {
-    margin: 0 5px; /* Reducir el margen para acercar el separador al icono */
-    height: 22px; /* Ajusta la altura según el diseño */
+    margin: 0 5px;
+    height: 22px; 
   }
   
   .auth-links .user-icon {
-    margin: 0 5px; /* Reducir el margen para acercar el icono al separador */
-    height: 25px; /* Ajusta la altura según el diseño */
+    margin: 0 5px; 
+    height: 25px; 
   }
   
   .main-header {
