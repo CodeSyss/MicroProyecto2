@@ -1,5 +1,5 @@
 import Header from './component/Header';
-import Footer from './component/Footer';
+// import Footer from './component/Footer';
 // import Banner from './component/Banner';
 // import MenuSection from './component/MenuSection';
 // import BuildYourPokeSection from './component/BuildYourPoke';
@@ -15,7 +15,7 @@ const App = () => {
       <BuildYourPokeSection />
       <TestimonialsSection />
       <ContactSection /> */}
-      <Footer /> 
+      {/* <Footer />  */}
     </div>
   );
 };
