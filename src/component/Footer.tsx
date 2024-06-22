@@ -1,4 +1,4 @@
-import '../assets/styles/main.css';
+// import '../assets/styles/footer.css';
 
 export default function FooterPrincipal() {
   return (
@@ -85,6 +85,7 @@ export default function FooterPrincipal() {
           className="images-1-_out-1"
         />
       </div>
-    </div>
+    </div> 
   )
 }
+

@@ -1,4 +1,4 @@
-import '../assets/styles/main.css';
+import '../assets/styles/header.css';
 import logoMolokai from '../assets/images/Logo Molokai.png';
 import logoUnimet from '../assets/images/LogoUnimet.png';
 import LogoCarrito from '../assets/images/LogoCarrito.png';
