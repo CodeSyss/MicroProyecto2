@@ -6,7 +6,7 @@
 }
 
 .wrapper {
-    width: 420px;
+    width: 440px;
     background-color: white;
     color: white;
     border-radius: 10px;
@@ -21,7 +21,7 @@
     margin-left: -40px;
     margin-top: -30px;
     margin-right: -40px;
-    margin-bottom: -10px;
+    margin-bottom: 20px;
 }
 .wrapper .wrapper-out h1 {
     font-size: 36px;
@@ -29,19 +29,24 @@
 }
 
 .wrapper .wrapper-out .icon {
-    margin-left: -40px;
+    margin-left: -60px;
+    
+}
+
+.wrapper .wrapper-out .icon2 {
+    margin-left: 35px;
 }
 
 
 .wrapper .input-box{
     position: relative;
     width: 100%;
-    height: 50px;
-    margin: 30px 0;
+    height: 40px;
+    margin: 10px 0;
 }
 
 .input-box input{
-    width: 100%;
+    width: 80%;
     height: 100%;
     background-color: #EFEFEF;
     outline: none;
@@ -49,6 +54,7 @@
     border-radius: 40px;
     color: black;
     padding: 20px 45px 20px 20px;
+    margin-left: 40px;
 }
 .input-box input::placeholder{
     color: #6C6C6C;
@@ -58,7 +64,8 @@
     display: flex;
     justify-content: left;
     font-size: 14.5px;
-    margin: -15px 0 15px;
+    margin: 15px 0 15px;
+    margin-left: 50px;
     color: black;
 }
 
@@ -69,7 +76,8 @@
 }
 
 .wrapper button {
-    width: 100%;
+    width: 60%;
+    margin-left: 80px;
     height: 45px;
     background: #29CCBA;
     border: none;
@@ -80,6 +88,7 @@
     font-size: 16px;
     color: white;
     font-weight: 100;
+    margin-top: 10px;
 }
 
 .wrapper .register_link{
