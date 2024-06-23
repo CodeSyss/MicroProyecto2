@@ -2,10 +2,12 @@
 import './LoginForm.css';
 import  {FaUser} from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
+import Header from '../component/Header-s.jsx';
 const LoginForm = () => {
     return (
         
-        
+        <div>
+        <Header />
         <div className="wrapper">
             
             <form action="">
@@ -33,6 +35,7 @@ const LoginForm = () => {
                 
             </form>
             
+        </div>
         </div>
     );
     } 

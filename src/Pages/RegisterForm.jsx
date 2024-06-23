@@ -1,4 +1,5 @@
 import './RegisterForm.css';
+import Header from '../component/Header-s';
 import  {FaUser} from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -45,7 +46,8 @@ const RegisterForm = () => {
       };
 
     return (
-    
+    <>
+    <Header />
     <div className="wrapper-r">
         
         <form onSubmit={handleRegister}>
@@ -81,6 +83,7 @@ const RegisterForm = () => {
             
         </form>
         </div>
+        </>
 );
 }
    

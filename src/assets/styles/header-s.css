@@ -1,8 +1,14 @@
-* {
+.body-header {
     margin-left: -10px;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
     
   }
   
@@ -12,6 +18,7 @@
     position: fixed; /* Fija el header en la parte superior de la pantalla */
     top: 0; 
     z-index: 10;
+    margin-left: 0px;
     
     background-image: url('../assets/images/imgBanner/Banner-Poke.jpg'); 
     background-size: cover; 
@@ -30,33 +37,12 @@
   }
   
   .uni-logo img {
+    align-items: center;
+    display: flex;
     height: 35px;
   }
   
-  .auth-links {
-    display: flex;
-    align-items: center;
-  }
-  
-  .auth-links a {
-    color: white;
-    margin-left: 8px;
-    text-decoration: none;
-  }
-  
-  .auth-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .auth-links .separator {
-    margin: 0 5px;
-    height: 22px; 
-  }
-  
-  .auth-links .user-icon {
-    margin: 0 5px; 
-    height: 25px; 
-  }
+
   
   .main-header {
     background-color: white;
@@ -68,43 +54,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
   }
-  
-  .brand h1 {
-    color: #20c997;
-    font-size: 2.7em; /* Aumenta el tamaño de la fuente de MOLOKA'I */
+    
+  .brand {
+    padding: 1.5em;
     margin: 0;
-    font-family: "Playfair Display", serif; 
-    font-weight: 700; /* Usar la fuente Inter en negrita */
-  }
-  
-  nav {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-left: auto;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #ff6b6b;
-    font-weight: bold;
-    font-size: 1.3em; /* Aumenta el tamaño de la fuente de INICIO, NOSOTROS, y MENU */
-  }
-  
-  nav .menu-btn {
-    background-color: #ff6b6b;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1.3em; /* Aumenta el tamaño de la fuente del botón MENU */
-  }
-  
-  .cart {
-    margin-left: 40px;
-  }
-  .cart img {
-    height: 60px;
-    cursor: pointer; 
   }
   
   .logoMolokai {
