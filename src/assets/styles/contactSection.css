@@ -1,0 +1,118 @@
+/* Nosotros */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+
+.SN {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    line-height: 30px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    margin-right: 50%;
+    margin-left: 10%;
+    margin-top: 50%;
+}
+
+.descripcionSN {
+  color: rgba(0, 0, 0, 1);
+  font-size: 25px;
+  line-height: 30px;
+  font-family: Poppins, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  margin-right: 60%;
+  margin-left: 10%;
+  height: 200px;
+}
+
+.mision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    color: #F8646C;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 60%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.descripcionMision {
+    color: rgba(0, 0, 0, 1);
+    font-size: 25px;
+    line-height: 30px;
+    font-family: Poppins, sans-serif;
+    font-style: italic;
+    text-align: center; 
+    font-weight: 400;
+    margin-right: 60%;
+    margin-left: 10%;
+} 
+
+.vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    color: #F8646C;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 60%;
+    margin-top: 10%;
+}
+
+.descripcionvision {
+    color: rgba(0, 0, 0, 1);
+    font-size: 25px;
+    line-height: 30px;
+    font-family: Poppins, sans-serif;
+    font-style: italic;
+    text-align: center; 
+    font-weight: 400;
+    margin-right: 10%;
+    margin-left: 60%;
+} 
+
+.imagenMision {
+    width: 421px;
+    height: 413px;
+    margin-top: -15%;
+    margin-left: 65%;
+  }
+
+.imagenVision {
+    position: relative;
+    width: 440px;
+    height: 413px;
+    margin-top: 10%;
+    margin-left: 10%;
+    top: -500px;
+}
+
+.barra {
+    background-color: #29CCBA;
+    justify-content: space-between;
+}
+
+
+.imagenSN {
+    width: 414px;
+    height: 331px;
+    margin-top: -15.5%; /* Ajusta el margen superior según sea necesario */
+    margin-left: 60%; /* Mantiene el margen izquierdo en 60% */   
+}
