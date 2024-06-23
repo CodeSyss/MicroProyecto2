@@ -29,9 +29,11 @@
 }
 
 .wrapper-r .wrapper-out-r .icon-r {
+    margin-top: 10px;
     margin-left: -200px;
     text-align: center;
 }
+
 .wrapper-r .wrapper-out-r .icon-r2 {
     
     margin-left: 155px;
@@ -108,6 +110,17 @@ body {
     background-position:  center;
     
 
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
 }
 
 code {
