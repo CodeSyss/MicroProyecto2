@@ -1,242 +1,277 @@
 * {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+
 }
 
-.footerP {
-  margin-top: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 1900px;
-  /* Puse 1900 en vez de 1920 porque se podia scrollear de lado */
-  height: 225px;
-  padding: 43px 35px 11px 98px;
-  box-sizing: border-box;
-  background-color: rgba(63, 78, 145, 1);
-}
-.logoM {
-  margin-right: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-.unimet {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  box-sizing: border-box;
-}
-.interLineado {
-  display: flex;
-  flex-direction: row;
-  height: 80%;
-  box-sizing: border-box;
-}
 
-/* Texto Contacto */
-.contactoT {
-  position: relative;
-  left: 110px;
-  top: 30px;
-  position: absolute;
-}
-.telefono {
-  position: relative;
-  left: 40px;
-  top: 15px;
-  width: 50px;
-  height: 100%;
-}
+  .footerP {
 
-/* TodoContacto */
-.contacto {
-  position: relative;
-  left: 200px;
-  top: -40px;
-  color: rgba(255, 255, 255, 1);
-  font-size: 24px;
-  line-height: 24px;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
-}
+    margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 98.72vw;
+    /* Puse 1900 en vez de 1920 porque se podia scrollear de lado */
+    height: 225px;
+    padding: 43px 35px 11px 98px;
+    box-sizing: border-box;
+    background-color: rgba(63, 78, 145, 1);
 
-.datosC {
-  position: absolute;
-  top: 71.25px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  width: 271.6px;
-  height: 41.75px;
-  box-sizing: border-box;
-}
-.info {
-  position: relative;
-  left: 250px;
-  top: 1175px;
-  width: 32.67px;
-  height: 36.01px;
-  margin-right: 0%;
-}
+  }
 
-.pagos {
-  position: relative;
-  left: 275px;
-  top: 1170px;
-  color: rgba(255, 255, 255, 1);
-  font-size: 16px;
-  line-height: 16px;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
-}
+  .logoM {
 
-.nroTelefono {
-  position: relative;
-  left: 275px;
-  top: 1180px;
-  color: rgba(255, 255, 255, 1);
-  font-size: 16px;
-  line-height: 16px;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
-}
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
 
-.linea {
-  width: 100%;
-  height: 4px;
-  border: 4px solid rgba(141, 128, 128, 1);
-}
+  }
 
-.siguenos {
-  position: relative;
-  left: 670px;
-  top: 0px;
-  justify-content: center;
-  color: rgba(255, 255, 255, 1);
-  font-size: 24px;
-  line-height: 24px;
-  font-family: Poppins, sans-serif;
-  font-weight: 300;
-}
+  .unimet {
 
-.copyright {
-  position: relative;
-  left: 620px;
-  top: -25px;
-  margin-top: 60%;
-  margin-left: 0;
-  color: rgba(255, 255, 255, 1);
-  font-size: 12px;
-  justify-content: center;
-  line-height: 12px;
-  font-family: Poppins, sans-serif;
-  font-weight: 500;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    box-sizing: border-box;
 
-.redesSociales {
-  margin-top: 59%;
-  position: relative;
-  left: 825px;
-  top: 950px;
-  position: absolute;
-  top: 112.62px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  height: 26.43px;
-  box-sizing: border-box;
-}
-.facebook {
-  position: relative;
-  left: -30px;
-  top: 0px;
-  width: 25.46px;
-  height: 100%;
-}
+  }
 
-.twitter {
-  position: relative;
-  left: -10px;
-  top: 0px;
-  width: 29px;
-  height: 100%;
-}
+  .interLineado {
 
-.instagram {
-  position: relative;
-  left: 10px;
-  top: 0px;
-  width: 27px;
-  height: 100%;
-}
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    box-sizing: border-box;
 
-.linkedin {
-  position: relative;
-  left: 30px;
-  top: 0px;
-  width: 22.46px;
-  height: 100%;
-}
+  }
 
-.acerca {
-  position: relative;
-  width: 233px;
-  height: 95.38px;
-  box-sizing: border-box;
-}
-/* Toda la zona de acerca de. */
-.separacion {
-  position: absolute;
-  top: 0px;
-  display: flex;
-  flex-direction: row;
-}
+  /* Texto Contacto */
+  .contactoT {
+    position: relative;
+    left: 0px;
+    top: -40px;
+  }
 
-.pin {
-  position: relative;
-  left: 430px;
-  top: -10px;
-  width: 50px;
-  height: 100%;
-}
+  .telefono {
 
-.acerca {
-  position: relative;
-  left: 450px;
-  top: 0px;
-  color: rgba(255, 255, 255, 1);
-  font-size: 24px;
-  line-height: 24px;
-  font-family: Poppins, sans-serif;
-}
+    position: relative;
+    left: -70px;
+    top: 10px;
+    width: 50px;
+    height: 100%;
 
-.creadorMolokai {
-  position: relative;
-  top: 60px;
-  left: 450px;
-  color: rgba(255, 255, 255, 1);
-  font-size: 16px;
-  line-height: 16px;
-  font-family: Poppins, sans-serif;
-}
+  }
 
-.logoUnimet {
-  position: relative;
-  left: 1100px;
-  top: 15px;
-  width: 142px;
-  height: 57.46px;
-}
+  /* TodoContacto */
+  .contacto {
 
-.LogoMolokai {
-  position: relative;
-  left: -650px;
-  top: 40px;
-  width: 80px;
-  height: 80px;
-}
+    position: relative;
+    left: 200px;
+    top: -30px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    line-height: 24px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+
+  }
+
+  .datosC {
+
+    position: absolute;
+    top: -0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 271.6px;
+    height: 41.75px;
+    box-sizing: border-box;
+
+  }
+
+  .info {
+
+    position: relative;
+    left: 400px;
+    top: 1460px;
+    width: 32.67px;
+    height: 36.01px;
+    margin-right: 0%;
+
+    position: absolute;
+    margin-top: 200%;
+    left: 90%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .pagos {
+    position: relative;
+    left: 300px;
+    top: 1995px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+  }
+
+  .nroTelefono {
+    position: relative;
+    left: 300px;
+    top: 2005px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+  }
+
+  /* .linea {
+    width: 100%;
+    height: 4px;
+    border: 4px solid rgba(141, 128, 128, 1);
+  } */
+
+  .siguenos{
+    
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    margin-top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+
+  }
+
+  /* .siguenos {
+    position: relative;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    line-height: 24px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    left: 400px;
+  } */
+
+  .copyright {
+
+    position: relative;
+    left: 0;
+    margin-top: 90%;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+      
+  }
+
+  .redesSociales {
+    position: absolute;
+    margin-top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .facebook,
+  .twitter,
+  .instagram,
+  .linkedin {
+    position: relative;
+    width: 25.46px;
+    height: 100%;
+    margin: 0 10px;
+  }
+
+  .separacion {
+
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .pin {
+
+    position: absolute;
+    margin-top: -5%;
+    left: 50%;
+    transform: translateX(50%);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+  }
+
+  .acerca {
+
+    position: relative;
+    margin-right: 30%;
+    left: 140%;
+    top: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 24px;
+    font-family: Poppins, sans-serif;
+
+  }
+
+  .creadorMolokai {
+
+    position: relative;
+    top: 80px;
+    left: 150px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 16px;
+    font-family: Poppins, sans-serif;
+
+  }
+
+  .logoUnimet {
+
+    /* position: relative;
+    left: -650px; */
+    position: absolute;
+    margin-top: -5%;
+    left: 90%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+  }
+
+  .LogoMolokai {
+    
+    position: relative;
+    left: -550px;
+    top: 40px;
+    width: 80px;
+    height: 80px;
+
+  }
