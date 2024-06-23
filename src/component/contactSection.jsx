@@ -2,6 +2,7 @@ import "../assets/styles/contactSection.css";
 import imagenMision from "../assets/images/imgContactSection/imagenMision.png";
 import imagenVision from "../assets/images/imgContactSection/imagenVision.png";
 import imagenNosotros from "../assets/images/imgContactSection/imagenNosotros.png";
+import planta from "../assets/images/imgContactSection/planta.png";
 //nosotros
 
 export default function Nosotros() {
@@ -17,7 +18,7 @@ export default function Nosotros() {
         </p>
             <img src={imagenNosotros} alt="Nosotros" className="imagenSN" />
         </div>
-
+        <img src={planta} alt="Planta" className="planta1" />
         <p className="mision">Misión</p>
         <p className="descripcionMision">
             Nuestra misión es alegrarles el día con los bowls más épicos que se puedan armar.
@@ -39,7 +40,7 @@ export default function Nosotros() {
       </p>
 
       <img src={imagenVision} alt="Vision" className="imagenVision" />
-
+      <img src={planta} alt="Planta" className="planta2" />
 
     </div>
   )
