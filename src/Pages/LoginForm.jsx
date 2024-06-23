@@ -31,7 +31,7 @@ const LoginForm = () => {
                 <button type="submit">Acceder</button>
 
                 <div className="register_link">
-                    <p>¿No tienes cuenta?  <a href="#">Registrate</a></p>
+                    <p>¿No tienes cuenta?<a href="#"> Registrate</a></p>
                 </div>
                 
             </form>

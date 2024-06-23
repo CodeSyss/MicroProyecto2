@@ -96,12 +96,15 @@
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
+    
     color: black;
 }
+
 
 .register_link p a{
     color: #29CCBA;
     text-decoration: none;
+    margin-left: 1px;
     font-weight: 600;
 }
 
