@@ -1,277 +1,128 @@
-* {
-  
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-
+.barraF {
+  background-color: #3F4E91;
+  justify-content: space-between;
+  width: 100%;
+  height: 320px;
 }
 
+.logoM {
+  position: relative;
+  top: 25px;
+  width: 100px;
+  height: 100px;
+  margin-top: 4%; 
+  margin-left: 5%;
+}
 
-  .footerP {
+.contactoImg {
+  position: relative;
+  top: -70px;
+  width: 60px;
+  height: 60px;
+  margin-top: -20%; 
+  margin-left: 15%;
+}
 
-    margin-top: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 98.72vw;
-    /* Puse 1900 en vez de 1920 porque se podia scrollear de lado */
-    height: 225px;
-    padding: 43px 35px 11px 98px;
-    box-sizing: border-box;
-    background-color: rgba(63, 78, 145, 1);
+.contactoTexto {
+  font-size: 25px;
+  color: white;
+  top: -60px;
+  margin-top: -6.5%; 
+  margin-left: 20%;
+}
 
-  }
+.info {
+  position: relative;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20%; 
+  margin-left: 16%;
+}
 
-  .logoM {
+.contactos {
+  font-size: 20px;
+  color: white;
+  top: -40px;
+  margin-top: -2%; 
+  margin-left: 20%;
+  height: 60px;
+}
 
-    margin-right: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-sizing: border-box;
+.siguenos {
+  color: white;
+  font-size: 25px;
+  margin-left: 45%;
+  margin-top: -10%;
+}
 
-  }
+.redesSociales {
+  position: relative;
+  top: 10px;
+  margin-left: 23%;
+  transform: scale(0.5);
+}
 
-  .unimet {
+.facebook,
+.twitter,
+.instagram,
+.linkedin {
+  margin-right: 40px;
+}
 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    box-sizing: border-box;
+.copy {
+  position: relative;
+  color: white;
+  font-size: 25px;
+  margin-left: -1%;
+  top: 160px;
+}
 
-  }
+.pin{
+  position: relative;
+  margin-top: -5%;
+  margin-left: 63%;
+  width: 60px;
+  height: 60px;
+  top: -100px;
+}
 
-  .interLineado {
+.acercade {
+  color: white;
+  font-size: 25px;
+  margin-left: 67%;
+  margin-top: -8%;
+}
 
-    display: flex;
-    flex-direction: row;
-    height: 80%;
-    box-sizing: border-box;
+.creador {
+  color: white;
+  font-size: 20px;
+  margin-left: 64%;
+  margin-top: 3%;
+}
 
-  }
+.unimet{
+  position: relative;
+  margin-left: 85%;
+  top: -10px;
+}
 
-  /* Texto Contacto */
-  .contactoT {
-    position: relative;
-    left: 0px;
-    top: -40px;
-  }
+.line-1 {
+  position: relative;
+  width: 394px;
+  height: 4px;
+  border: 4px solid rgba(141, 128, 128, 1);
+  top: -20px;
+  margin-left: 15%;
+  
+}
 
-  .telefono {
-
-    position: relative;
-    left: -70px;
-    top: 10px;
-    width: 50px;
-    height: 100%;
-
-  }
-
-  /* TodoContacto */
-  .contacto {
-
-    position: relative;
-    left: 200px;
-    top: -30px;
-    color: rgba(255, 255, 255, 1);
-    font-size: 24px;
-    line-height: 24px;
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
-
-  }
-
-  .datosC {
-
-    position: absolute;
-    top: -0px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    width: 271.6px;
-    height: 41.75px;
-    box-sizing: border-box;
-
-  }
-
-  .info {
-
-    position: relative;
-    left: 400px;
-    top: 1460px;
-    width: 32.67px;
-    height: 36.01px;
-    margin-right: 0%;
-
-    position: absolute;
-    margin-top: 200%;
-    left: 90%;
-    transform: translateX(-50%);
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  .pagos {
-    position: relative;
-    left: 300px;
-    top: 1995px;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    line-height: 16px;
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
-  }
-
-  .nroTelefono {
-    position: relative;
-    left: 300px;
-    top: 2005px;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    line-height: 16px;
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
-  }
-
-  /* .linea {
-    width: 100%;
-    height: 4px;
-    border: 4px solid rgba(141, 128, 128, 1);
-  } */
-
-  .siguenos{
-    
-    color: rgba(255, 255, 255, 1);
-    position: absolute;
-    margin-top: -5%;
-    left: 50%;
-    transform: translateX(-50%);
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20%;
-
-  }
-
-  /* .siguenos {
-    position: relative;
-    justify-content: center;
-    color: rgba(255, 255, 255, 1);
-    font-size: 24px;
-    line-height: 24px;
-    font-family: Poppins, sans-serif;
-    font-weight: 300;
-    left: 400px;
-  } */
-
-  .copyright {
-
-    position: relative;
-    left: 0;
-    margin-top: 90%;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    font-family: Poppins, sans-serif;
-      
-  }
-
-  .redesSociales {
-    position: absolute;
-    margin-top: -5%;
-    left: 50%;
-    transform: translateX(-50%);
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .facebook,
-  .twitter,
-  .instagram,
-  .linkedin {
-    position: relative;
-    width: 25.46px;
-    height: 100%;
-    margin: 0 10px;
-  }
-
-  .separacion {
-
-    position: absolute;
-    top: 0px;
-    display: flex;
-    flex-direction: row;
-
-  }
-
-  .pin {
-
-    position: absolute;
-    margin-top: -5%;
-    left: 50%;
-    transform: translateX(50%);
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-
-  }
-
-  .acerca {
-
-    position: relative;
-    margin-right: 30%;
-    left: 140%;
-    top: 0px;
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    line-height: 24px;
-    font-family: Poppins, sans-serif;
-
-  }
-
-  .creadorMolokai {
-
-    position: relative;
-    top: 80px;
-    left: 150px;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    line-height: 16px;
-    font-family: Poppins, sans-serif;
-
-  }
-
-  .logoUnimet {
-
-    /* position: relative;
-    left: -650px; */
-    position: absolute;
-    margin-top: -5%;
-    left: 90%;
-    transform: translateX(-50%);
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-
-  }
-
-  .LogoMolokai {
-    
-    position: relative;
-    left: -550px;
-    top: 40px;
-    width: 80px;
-    height: 80px;
-
-  }
+.line-2 {
+  position: relative;
+  width: 394px;
+  height: 4px;
+  border: 4px solid rgba(141, 128, 128, 1);
+  top: -30px;
+  margin-left: 60%;
+  
+}

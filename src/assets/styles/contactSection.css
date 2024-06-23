@@ -45,7 +45,7 @@
     text-align: center;
     margin-right: 60%;
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 0%;
 }
 
 .descripcionMision {
@@ -73,7 +73,7 @@
     text-align: center;
     margin-right: 10%;
     margin-left: 60%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .descripcionvision {
@@ -113,6 +113,20 @@
 .imagenSN {
     width: 414px;
     height: 331px;
-    margin-top: -15.5%; /* Ajusta el margen superior según sea necesario */
-    margin-left: 60%; /* Mantiene el margen izquierdo en 60% */   
+    margin-top: -15.5%; 
+    margin-left: 60%;
+    
+}
+.planta1 {
+    width: 200px;
+    height: 235px;
+    margin-top: -5%;
+}
+
+.planta2 {
+    width: 200px;
+    height: 235px;
+    transform: rotate(180deg);
+    position: absolute;
+    right: 0;
 }
