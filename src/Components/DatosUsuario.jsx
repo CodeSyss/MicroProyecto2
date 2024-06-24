@@ -1,12 +1,15 @@
 import "../Styles/DatosUsuario.css"
 import {  useState, useEffect} from 'react'
 import { auth, db } from "./firebase";
-import {doc, getDoc} from "firebase/firestore"
+import {doc, getDoc, updateDoc} from "firebase/firestore"
+import { toast } from "react-toastify";
 
 
 function Profile () {
 
   const [userDetails, setUserDetails] = useState(null);
+  const [telf, setTelf] = useState(userDetails ?.telf)
+  const [rol, setRol] = useState(userDetails ?.rol)
   const fetchUserData = async () => {
     auth.onAuthStateChanged(async (user) => {
       console.log(user);
@@ -25,15 +28,24 @@ function Profile () {
     fetchUserData();
   }, []);
 
+const HandleSave= async (user) => {
+   const change = doc(db, "Users", auth.currentUser.uid);
+   await updateDoc(change, {
+    rol: rol,
+    telefono: telf,
+   })
+}
+
     return(
         <header>
+          <form onSubmit={HandleSave}>
             <div className="Nombre_Apellido">
                 <p>Andres Diaz</p>
                 <p className="Editar"><span>Editar Nombre</span></p>
             </div>
             <div className="Campos_Informacion_Rol">
                 <p className="Rol">Rol Universitario</p>
-                <input type="text" placeholder={userDetails ?.rol} onChange={(e) => setTelf(e.target.value)} /> 
+                <input type="text" placeholder={userDetails ?.rol} onChange={(e) => setRol(e.target.value)} /> 
             </div>
             <div className="Campos_Informacion_Telefono">
                 <p className="nro_telefonico">Nro Telefonico</p>
@@ -48,8 +60,9 @@ function Profile () {
                 <button className="display_email">{userDetails ?.email}</button>
             </div>
             <div className="save">
-                <button className="save_button"><span>Guardar Cambios</span></button>
+                <button type = "submit" className="save_button"><span>Guardar Cambios</span></button>
             </div>
+            </form>
         </header>
     )
 }
