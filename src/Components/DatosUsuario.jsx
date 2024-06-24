@@ -28,7 +28,7 @@ function Profile () {
     fetchUserData();
   }, []);
 
-const HandleSave= async (user) => {
+const HandleSave= async () => {
    const change = doc(db, "Users", auth.currentUser.uid);
    await updateDoc(change, {
     rol: rol,
@@ -40,7 +40,7 @@ const HandleSave= async (user) => {
         <header>
           <form onSubmit={HandleSave}>
             <div className="Nombre_Apellido">
-                <p>Andres Diaz</p>
+                <p>{userDetails ?.nombre} {userDetails ?.apellido}</p>
                 <p className="Editar"><span>Editar Nombre</span></p>
             </div>
             <div className="Campos_Informacion_Rol">
