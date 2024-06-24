@@ -143,3 +143,59 @@ header h1 {
   font-size: 1em;
   margin-top: 20px;
 }
+
+@media (max-width: 1350px) {
+
+  .leaf {
+    width: 115px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1316px) {
+
+  .card {
+    margin: 0 15px;
+    padding: 20px;
+    width: 240px;
+    /* height: 400px; */
+  }
+
+  .card img {
+    height: 160px;
+    width: 160px;
+  }
+  
+  .card h2 {
+    font-size: 1.1em;
+    margin: 9px 0;
+  }
+
+  .ingredientes {
+    font-size: 0.8em;
+  }
+
+  /* .leaf {
+    width: 115px;
+    height: 250px;
+  } */
+  
+  
+}
+
+@media (max-width: 1020px) {
+}
+
+
+@media (max-width: 795px) {
+}
+
+@media (max-width: 725px) {
+}
+
+@media (max-width: 600px) {
+}
+
+@media (max-width: 480px) {
+
+}
