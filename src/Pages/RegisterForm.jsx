@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { auth, db } from "./firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
+import Header from "../component/Header-s.jsx";
 
 const RegisterForm = () => { 
     
@@ -49,7 +50,8 @@ const RegisterForm = () => {
       };
 
     return (
-    
+    <>
+    <Header/>
     <div className="wrapper-r">
         
         <form onSubmit={handleRegister}>
@@ -85,6 +87,7 @@ const RegisterForm = () => {
             
         </form>
         </div>
+        </>
 );
 }
    

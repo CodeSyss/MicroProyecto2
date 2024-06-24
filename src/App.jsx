@@ -9,6 +9,7 @@ import Profile from "./Pages/Profile.jsx";
 import { useEffect, useState } from "react";
 import { auth } from "./Pages/firebase.js";
 
+
 function App() {
   const [user, setUser]=useState();
   useEffect(()=>{
