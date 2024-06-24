@@ -1,4 +1,4 @@
-import "../assets/styles/banner.css";
+import "../assets/styles/Banner.css";
 import imgPrincipal from "../assets/images/imgBanner/Banner-Poke.jpg";
 import Buscador from "../assets/images/imgBanner/Buscador.png";
 import FlechaDerecha from "../assets/images/imgBanner/FlechaDerecha.png";

@@ -4,7 +4,7 @@ import star from "../assets/images/imgComments/star.png";
 
 export default function Comments() {
   return (
-    <div>
+    <div className="p">
       <div className="barra">
         <p className="comentariosDestacados">Comentarios destacados</p>
       </div>

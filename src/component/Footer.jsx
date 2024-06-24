@@ -22,7 +22,7 @@ export default function FooterPrincipal() {
       <div>
         <img src={info} alt="Contacto" className="info" />
         <p className="contactos">pagos@pokemolokai.com</p>
-        <p className="contactos">0414-123-6105</p>
+        <p className="tlf">0414-123-6105</p>
       </div>
       <div>
         <p className="siguenos"> Síguenos: </p>
