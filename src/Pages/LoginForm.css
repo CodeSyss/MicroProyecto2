@@ -54,10 +54,10 @@
 }
 
 .wrapper .socialImg{
-    width: 10%;
-    border: solid 2px black;
-    border-radius: 30px;
-    padding: 3px;
+    width: 12%;
+    border: solid 2px #29CCBA;
+    border-radius: 20px;
+    padding: 2px;
     display: block;
     margin-left: 20px;
     margin-right: 20px;  
