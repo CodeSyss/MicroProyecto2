@@ -9,7 +9,6 @@ import info from "../assets/images/imgFooter/info.png";
 import pin from "../assets/images/imgFooter/pin.png";
 import logoUnimet from "../assets/images/imgHeader/LogoUnimet.png";
 
-
 export default function FooterPrincipal() {
   return (
     <div className="barraF">
@@ -23,7 +22,7 @@ export default function FooterPrincipal() {
       <div>
         <img src={info} alt="Contacto" className="info" />
         <p className="contactos">pagos@pokemolokai.com</p>
-        <p className= "contactos">0414-123-6105</p>
+        <p className="contactos">0414-123-6105</p>
       </div>
       <div>
         <p className="siguenos"> Síguenos: </p>
@@ -35,12 +34,12 @@ export default function FooterPrincipal() {
           <p className="copy">Copyright @2024 - All Right Reserved</p>
         </div>
         <div>
-          <img src={pin} alt="Acerca" className="pin"/>
+          <img src={pin} alt="Acerca" className="pin" />
           <p className="acercade">ACERCA DE</p>
           <p className="creador">Creado por: José García</p>
         </div>
         <div>
-          <img src={logoUnimet} alt="Unimet" className="unimet"/>
+          <img src={logoUnimet} alt="Unimet" className="unimet" />
         </div>
         <div className="line-1" />
         <div className="line-2" />

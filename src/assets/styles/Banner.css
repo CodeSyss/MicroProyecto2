@@ -31,7 +31,7 @@
   font-size: 4.5em;
   font-weight: bold;
   margin-bottom: 20px;
-  text-shadow: 20px 20px 19px rgba(0,0,0,0.5);
+  text-shadow: 20px 20px 19px rgba(0, 0, 0, 0.5);
 }
 
 .search-bar {
@@ -43,9 +43,9 @@
   padding: 7px;
   box-shadow: 0 7px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
-  width: 70%; /* Ajusta el ancho de la barra de búsqueda */
-  max-width: 800px; /* Ancho máximo de la barra de búsqueda */
-  height: 67px; /* Reduce la altura de la barra de búsqueda */
+  width: 70%;
+  max-width: 800px;
+  height: 67px;
 }
 
 .search-bar input {
@@ -53,10 +53,10 @@
   padding: 20px;
   outline: none;
   border-radius: 45px 0 0 45px;
-  font-size: 1.5em; 
-  width: 100%; 
-  flex-grow: 1; 
-  height: 20px; /* Reduce la altura del input a 40 píxeles */
+  font-size: 1.5em;
+  width: 100%;
+  flex-grow: 1;
+  height: 20px;
 }
 
 .search-bar button {
@@ -72,9 +72,8 @@
 }
 
 ::placeholder {
-    color: #c9c6c6; 
-  }
-  
+  color: #c9c6c6;
+}
 
 .arrow-down {
   position: absolute;

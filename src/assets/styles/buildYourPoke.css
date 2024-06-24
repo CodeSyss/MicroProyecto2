@@ -1,95 +1,90 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  .espacio {
-    margin: 50px 0;
-  }
-  
-  .section {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
 
-  .section.left {
-    justify-content: flex-start;
-    width: 100%;
-    padding-left: 230px; /* Ajusta este valor según sea necesario */
-  }
-  
-  .section.right {
-    justify-content: flex-end;
-    width: 100%;
-    padding-right: 200px; /* Ajusta este valor según sea necesario */
-  }
-  
-  
-  .step {
-    height: 40px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
-    margin: 0 20px;
-  }
+.espacio {
+  margin: 50px 0;
+}
 
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
 
-  .search-poke-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  
-  .search-poke {
-    display: flex;
-    align-items: center;
-    background-color: #00d1b2;
-    border-radius: 25px;
-    padding: 10px 450px; /* Ajusta el padding para hacer que el botón sea más largo */
-    margin: 20px 0;
-    justify-content: flex-start; /* Alinea el contenido al inicio */
-  }
-  
-  .cta {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 20px;
-    font-size: 40px; /* Aumenta el tamaño de la fuente */
-  }
+.section.left {
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 230px;
+}
 
-  
-  
-  .arrow-btn {
-    background-color: #00d1b2;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .arrow-btn img {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .leaf-C {
-    position: relative;
-    width: 100%;
-    height: 0; /* Establecer una altura de 0 para evitar que ocupe espacio */
-  }
-  
-  .leafc {
-    position: absolute;
-    top: -250px;
-    left: 0%;
-    width: 200px;
-    height: 300px;
-  }
+.section.right {
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 200px;
+}
+
+.step {
+  height: 40px;
+  margin: 0 20px;
+}
+
+.search-poke-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-poke {
+  display: flex;
+  align-items: center;
+  background-color: #00d1b2;
+  border-radius: 25px;
+  padding: 10px 450px;
+  margin: 20px 0;
+  justify-content: flex-start;
+}
+
+.cta {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 20px;
+  font-size: 40px;
+}
+
+.arrow-btn {
+  background-color: #00d1b2;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-btn img {
+  width: 35px;
+  height: 35px;
+}
+
+.leaf-C {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.leafc {
+  position: absolute;
+  top: -250px;
+  left: 0%;
+  width: 200px;
+  height: 300px;
+}
