@@ -61,6 +61,7 @@ header h1 {
   width: 250px;
   background-color: #f2f2f2;
   position: relative;
+  
 }
 
 .card img {
@@ -80,6 +81,11 @@ header h1 {
   border: none;
   cursor: pointer;
   font-size: 1em;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 .ingredientes {
@@ -91,16 +97,16 @@ header h1 {
   position: absolute;
   top: 10px;
   right: 12px;
-  font-size: 30px;
-  color: #ffffff; /* Color del logotipo del "más" */
-  background-color: #00d1b2; /* Fondo blanco */
+  font-size: 1.5em;
+  color: #ffffff;
+  background-color: #00d1b2;
   border-radius: 50%;
   width: 35px;
-  height: 37px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
@@ -135,4 +141,5 @@ header h1 {
   color: #fff;
   cursor: pointer;
   font-size: 1em;
+  margin-top: 20px;
 }

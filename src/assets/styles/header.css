@@ -116,3 +116,211 @@ nav .menu-btn {
 .logoMolokai img {
   max-width: 140px;
 }
+
+
+/* Media Queries para hacer el header responsive */
+@media (max-width: 1000px) {
+  .top-bar {
+    align-items: center;
+    padding: 1px 20px;
+  }
+
+  .uni-logo img {
+    max-width: 100px;
+  }
+
+  .auth-links {
+    margin-top: 2px;
+  }
+
+  .auth-links a{
+    font-size: 0.8em; 
+  }
+
+  .main-header {
+    align-items: center;
+    padding: 17px 30px;
+  }
+  
+
+  .brand h1 {
+    font-size: 34px;
+  }
+
+  .logoMolokai img {
+    max-width: 120px;
+  }
+
+  nav{
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0 1px;
+    font-size: 1em; 
+  }
+
+  nav .menu-btn {
+    padding: 8px 13px;
+    font-size: 1em; 
+  }
+
+  .cart{
+    margin-left: 20px;
+  }
+
+  .cart img {
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .auth-links .separator {
+    height: 18px;
+  }
+  
+  .auth-links .user-icon {
+    height: 19px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .uni-logo img {
+    max-width: 80px;
+  }
+
+  .auth-links {
+    margin-top: 2px;
+  }
+
+  .auth-links a{
+    font-size: 0.7em; 
+  } 
+
+  .brand h1 {
+    font-size: 27px;
+  }
+
+  .logoMolokai img {
+    max-width: 100px;
+  }
+
+  nav{
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 0.9em; 
+  }
+
+  nav .menu-btn {
+    font-size: 0.9em; 
+  }
+
+  .cart{
+    margin-left: 14px;
+  }
+
+  .cart img {
+    height: 44px;
+  }
+
+  .auth-links .separator {
+    height: 15px;
+  }
+  
+  .auth-links .user-icon {
+    height: 17px;
+  }
+  
+}
+
+
+@media (max-width: 500px) {
+
+  nav{
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 0.6em;
+  }
+
+  nav .menu-btn {
+    font-size: 0.6em; 
+  }
+
+  .main-header {
+    padding: 8px 30px;
+  }
+
+  .logoMolokai img {
+    max-width: 92px;
+  }
+  
+  .brand h1 {
+    font-size: 25px;
+  }
+  
+  .cart img {
+    height: 40px;
+  }
+
+  .uni-logo img {
+    max-width: 70px;
+    height: 30px;
+  }
+
+  .auth-links a{ 
+    margin-left: 0px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  nav{
+    gap: 6px;
+  }
+
+  nav a {
+    font-size: 0.5em; 
+  }
+
+  nav .menu-btn {
+    font-size: 0.5em;
+  }
+
+  .logoMolokai img {
+    max-width: 84px;
+  }
+
+  .brand h1 {
+    font-size: 22px;
+  }
+  
+  .cart img {
+    height: 35px;
+  }
+
+  .uni-logo img {
+    max-width: 60px;
+    height: 25px;
+  }
+
+  .auth-links .separator {
+    height: 12px;
+  }
+  
+  .auth-links .user-icon {
+    height: 14px;
+  }
+
+  .auth-links a{
+    font-size: 0.6em; 
+  }
+
+}
+

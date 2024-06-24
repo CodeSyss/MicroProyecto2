@@ -27,8 +27,8 @@ const Header = () => {
           <img src={logoMolokai} alt="Logotipo de MOLOKA'I" />
         </div>
         <nav>
-          <a href="#inicio">INICIO</a>
-          <a href="#nosotros">NOSOTROS</a>
+          <a href="#inicio" className="init">INICIO</a>
+          <a href="#nosotros" className="init">NOSOTROS</a>
           <a href="#menu" className="menu-btn">
             MENÚ
           </a>
