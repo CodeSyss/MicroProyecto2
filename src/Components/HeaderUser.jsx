@@ -25,14 +25,14 @@ const HeaderUser = () => {
         </div>
       <div className="line-2"></div>
         <nav>
-          <a href="#Mi Perfil">Mi Perfil</a>
+          <a href="#Mi Perfil" className="menu-btn">Mi Perfil</a>
           <a href="#Metodos y Seguridad">Metodos Y Seguridad</a>
         </nav>
         <div className="logoMolokai">
           <img src={logo} alt="Logotipo de MOLOKA'I" />
         </div>
         <nav>
-          <a href="#menu" className="menu-btn">
+          <a href="#menu">
             Historial
           </a>
         </nav>
