@@ -26,6 +26,7 @@ function Profile() {
   }, []);
 
   //se encarga del logout
+  //prueba
   async function handleLogout() {
     try {
       await auth.signOut();
