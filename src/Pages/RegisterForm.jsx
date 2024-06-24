@@ -1,14 +1,11 @@
 import './RegisterForm.css';
-import Header from '../component/Header-s';
 import  {FaUser} from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import { auth} from "./firebase";
+import { auth, db } from "./firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
-
-//import { auth, db } from "./firebase";
 
 const RegisterForm = () => { 
     
@@ -19,24 +16,30 @@ const RegisterForm = () => {
     const [rol, setRol] = useState("");
     const [telf, setTelf] = useState("");
     
-    const handleRegister = (e) => {
+    //se encarga del register
+    const handleRegister = async (e) => {
         e.preventDefault();
         try {
-          createUserWithEmailAndPassword(auth, email, password);
+          await createUserWithEmailAndPassword(auth, email, password);
           const user = auth.currentUser;
           console.log(user);
           if (user) {
-            setDoc(doc(db, "Users", user.uid), {
+            //crea el usuario en la database
+            await setDoc(doc(db, "Users", user.uid), {
               email: user.email,
-              firstName: fname,
-              lastName: lname,
+              nombre: fname,
+              apellido: lname,
+              telefono: telf,
+              rol: rol,
               photo:""
             });
           }
-          console.log("User Registered Successfully!!");
-          toast.success("User Registered Successfully!!", {
+          console.log("Usuario registrado correctamente!");
+          toast.success("Usuario registrado correctamente!",{
             position: "top-center",
-          });
+          })
+          //pagina a la que manda despues del registro
+          window.location.href='/Login';
         } catch (error) {
           console.log(error.message);
           toast.error(error.message, {
@@ -46,8 +49,7 @@ const RegisterForm = () => {
       };
 
     return (
-    <>
-    <Header />
+    
     <div className="wrapper-r">
         
         <form onSubmit={handleRegister}>
@@ -68,7 +70,7 @@ const RegisterForm = () => {
                 <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required/>
             </div>
             <div className="input-box-r">
-                <input type="text" placeholder="Telefono" onChange={(e) => setTelf(e.target.value)} required/>
+                <input type="int" placeholder="Telefono" onChange={(e) => setTelf(e.target.value)} required/>
             </div>
             <div className="input-box-r">
                 <input type="password" placeholder="Contraseña" onChange={(e) => setPassword(e.target.value)} required/>
@@ -83,7 +85,6 @@ const RegisterForm = () => {
             
         </form>
         </div>
-        </>
 );
 }
    
