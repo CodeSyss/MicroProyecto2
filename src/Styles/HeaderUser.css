@@ -62,13 +62,14 @@
   }
   
   .brand h1 {
-    color: #20c997;
-    font-size: 2.7em; /* Aumenta el tamaño de la fuente de MOLOKA'I */
+    color: #29CCBA;
+    font-size: 2.7em; /* aumenta el tamaño de la fuente de moloka'i */
     margin: 0;
-    font-family: "Playfair Display", serif; 
-    font-weight: 700; /* Usar la fuente Inter en negrita */
-    border-right: 3px solid #20c997;
-    padding-right: 30px;
+    font-family: "playfair display", serif; 
+    font-weight: 700; /* usar la fuente inter en negrita */
+    padding-right: 40px;
+    max-width: 60%;
+    height: auto;
   }
   
   nav {
@@ -82,7 +83,7 @@
     text-decoration: none;
     color: #000000;
     font-weight: bold;
-    font-family: "Inter" ; 
+    font-family: "Poppins", sans-serif; 
     position:relative;
     right: 73px;
     font-size: 1.6em; /* Aumenta el tamaño de la fuente de INICIO, NOSOTROS, y MENU */
@@ -123,7 +124,7 @@
   .line-1 {
     z-index: 0;
     height: 3px;
-    background: #20c997;
+    background: #29CCBA;
     position: relative;
     right: 7px;
   }
