@@ -177,7 +177,17 @@
     .comentario2 {
       position: relative;
       margin-left: 50%;
-      margin-top: 40%;
+      margin-top: -10%;
+    }
+
+    .comentario3 {
+      position: relative;
+      top: 10px;
+    }
+
+    .comentario2 {
+      position: relative;
+      top: 10px;
     }
 
     .nombre3,
