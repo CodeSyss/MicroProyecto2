@@ -123,9 +123,6 @@
     right: -46%;
   }
 
-  .password .change_passwd:hover {
-    text-decoration: underline;
-  }
   .password .change_passwd span {
     cursor: pointer;
     display: inline-block;
@@ -176,3 +173,48 @@
   color:#29CCBA;
   right: -46%;
   }
+
+  .save {
+  position: absolute;
+  font-size: 2vw; 
+  top: 720px;
+  left: 34.5%;
+  text-decoration: underline;
+  }
+
+  .save .save_button {
+  height: 60px;
+  width: 105%;
+  background-color: #ff6b6b;
+  outline: none;
+  border: 2px solid #ff6b6b;
+  border-radius: 10px;
+  font-family: "poppins", sans-serif; 
+  font-size: 1.6vw;
+  color:#ffffff;
+  }
+
+ .save .save_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .save .save_button:hover span {
+  padding-right: 25px;
+  }
+
+  .save .save_button:hover span::after {
+  opacity: 1;
+  right: 0;
+  }
+
+  .save .save_button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}

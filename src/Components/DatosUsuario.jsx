@@ -24,6 +24,9 @@ const DatosUsuario = () => {
                 <p className="correo_electronico">Correo Electronico</p>
                 <button className="display_email">d.andres@correo.unimet.edu.ve</button>
             </div>
+            <div className="save">
+                <button className="save_button"><span>Guardar Cambios</span></button>
+            </div>
         </header>
     )
 }
