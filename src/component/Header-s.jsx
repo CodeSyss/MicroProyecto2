@@ -14,7 +14,7 @@ const Header = () => {
       </div>
 
       <div className="main-header">
-        <div className="brand">
+        <div className="brand"> 
         </div>
         <div className="logoMolokai">
           <img src={logoMolokai} alt="Logotipo de MOLOKA'I" />

@@ -6,8 +6,9 @@ import  {FaUser} from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { auth, db } from './firebase';
 import { toast } from "react-toastify";
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithPopup, FacebookAuthProvider } from 'firebase/auth';
 import { setDoc, doc } from 'firebase/firestore';
+import Header from "../component/Header-s.jsx";
 
 
 const LoginForm = () => {
@@ -57,10 +58,32 @@ const LoginForm = () => {
         }
       });
     }
+    function facebookLogin() {
+        const provider = new FacebookAuthProvider();
+        signInWithPopup(auth, provider).then(async (result) => {
+        console.log(result);
+        const user = result.user;
+        if (result.user) {
+          await setDoc(doc(db, "Users", user.uid), {
+            email: user.email,
+            nombre: user.displayName,
+            photo: user.photoURL,
+            apellido: "",
+            rol: "",
+            telefono: "",
+          });
+          toast.success("Usuario loggeado correctamente!", {
+            position: "top-center",
+          });
+          window.location.href = "/Profile";
+        }
+      });
+    }
 
     return (
         
-        
+        <>
+        <Header/>
         <div className="wrapper">
             
             <form onSubmit={handleSubmit}>
@@ -85,12 +108,17 @@ const LoginForm = () => {
 
                 <div>
                     <p className="continue-p">-- O continua con--</p>
-                        <img className="googleImg" src={'./src/assets/images/google.png'} onClick={googleLogin}/>
+                        <div className="social">
+                        <img className="socialImg" src={'./src/assets/images/google.jpg'} onClick={googleLogin}/>
+                        <img className="socialImg"src={'./src/assets/images/facebook.svg'} onClick={facebookLogin}/>
+                        </div>
                 </div>
+
                 
             </form>
             
         </div>
+        </>
     );
     } 
 export default LoginForm; 

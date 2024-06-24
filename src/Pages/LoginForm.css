@@ -45,12 +45,24 @@
     margin: 10px 0;
 }
 
-.wrapper .googleImg{
-    width: 60%;
+.wrapper .social{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin: 0;
+
+}
+
+.wrapper .socialImg{
+    width: 10%;
+    border: solid 2px black;
+    border-radius: 30px;
+    padding: 3px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;  
+    margin-left: 20px;
+    margin-right: 20px;  
     cursor: pointer;
+    justify-content: center;
 }
 
 .wrapper .continue-p{

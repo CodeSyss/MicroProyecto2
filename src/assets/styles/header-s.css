@@ -8,7 +8,7 @@
     margin: 0;
     align-items: center;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     
   }
   
@@ -19,6 +19,7 @@
     top: 0; 
     z-index: 10;
     margin-left: 0px;
+
     
     background-image: url('../assets/images/imgBanner/Banner-Poke.jpg'); 
     background-size: cover; 
