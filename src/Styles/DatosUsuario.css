@@ -1,0 +1,178 @@
+  .Nombre_Apellido {
+    color: #29CCBA;
+    font-size: 5vw; 
+    font-family: "poppins", sans-serif; 
+    max-width: 60%;
+    position: absolute;
+    top: 150px;
+    right: 650px;
+    height: auto;
+    text-align: left;
+  }
+
+  .Nombre_Apellido .Editar {
+    color: #F8646C;
+    position: absolute;
+    font-size: 2vw; 
+    top: 50%;
+    
+  }
+
+  .Campos_Informacion_Rol {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+  }
+
+  .Campos_Informacion_Rol .Rol {
+    position: absolute;
+    font-size: 2vw; 
+    color: #29CCBA;
+    top: 350px;
+    right:52%;
+    text-decoration: underline;
+
+  }
+
+  .Campos_Informacion_Rol input {
+    width: 10%;
+    height: 30%;
+    background-color: #ffffff;
+    outline: none;
+    border: 2px solid #29CCBA;
+    border-radius: 10px;
+    padding: 20px 45px 20px 20px;
+    font-family: "poppins", sans-serif; 
+    font-size: 1.6vw;
+    margin-left: 40px;
+    position: absolute;
+    top: 450px;
+    right: 52%;
+  }
+
+  .Campos_Informacion_Rol input::placeholder {
+    color: #000000;
+  }
+  
+  .Campos_Informacion_Telefono{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+  }
+
+  .Campos_Informacion_Telefono .nro_telefonico {
+    position: absolute;
+    font-size: 2vw; 
+    color: #29CCBA;
+    top: 500px;
+    right:53%;
+    text-decoration: underline;
+
+  }
+
+  .Campos_Informacion_Telefono input {
+    width: 10%;
+    height: 30%;
+    background-color: #ffffff;
+    outline: none;
+    border: 2px solid #29CCBA;
+    border-radius: 10px;
+    padding: 20px 45px 20px 20px;
+    font-family: "poppins", sans-serif; 
+    font-size: 1.6vw;
+    margin-left: 40px;
+    position: absolute;
+    top: 600px;
+    right: 52%;
+  }
+
+  .Campos_Informacion_Telefono input::placeholder {
+    color: #000000;
+  }
+  .Nombre_Apellido .Editar:hover {
+    text-decoration: underline;
+  }
+
+
+  .password {
+    position: absolute;
+    font-size: 2vw; 
+    color: #29CCBA;
+    top: 375px;
+    right:17%;
+    text-decoration: underline;
+
+  }
+
+  .password .change_passwd {
+    display: inline-block;
+    width: 190%;
+    height: 40%;
+    background-color: #ffffff;
+    outline: none;
+    border: 2px solid #29CCBA;
+    border-radius: 10px;
+    font-family: "poppins", sans-serif; 
+    font-size: 1.6vw;
+    position: absolute;
+    top: 100px;
+    color:#29CCBA;
+    transition: all 0.5s;
+    right: -46%;
+  }
+
+  .password .change_passwd:hover {
+    text-decoration: underline;
+  }
+  .password .change_passwd span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .password .change_passwd:hover span {
+  padding-right: 25px;
+  }
+
+  .password .change_passwd:hover span::after {
+  opacity: 1;
+  right: 0;
+  }
+
+  .password .change_passwd span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+
+.correo {
+  position: absolute;
+  font-size: 2vw; 
+  color: #29CCBA;
+  top: 530px;
+  right:14%;
+  text-decoration: underline;
+  }
+
+
+.correo .display_email{
+  width: 190%;
+  height: 40%;
+  background-color: #ffffff;
+  outline: none;
+  border: 2px solid #29CCBA;
+  border-radius: 10px;
+  font-family: "poppins", sans-serif; 
+  font-size: 1.6vw;
+  position: absolute;
+  top: 100px;
+  color:#29CCBA;
+  right: -46%;
+  }

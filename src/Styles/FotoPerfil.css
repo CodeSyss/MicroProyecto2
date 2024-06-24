@@ -1,0 +1,20 @@
+
+.foto_perfil {
+    position: absolute;
+    right: 760px;
+    top: 270px;
+}
+
+.foto_perfil .p_icon {
+    max-width: 60%;
+    height: auto;
+}
+
+
+.foto_perfil .c_icon {
+    position: absolute;
+    right: 45%;
+    top: 70%;
+    max-width: 15%;
+    height: auto;
+}
