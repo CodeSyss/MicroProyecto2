@@ -4,7 +4,7 @@
 
 .p {
   position: relative;
-  top: -850px;
+  top: -650px;
   }
 
   .SN {
@@ -126,8 +126,8 @@
   }
 
   .imagenSN {
-    width: 414px;
-    height: 331px;
+    width: 350px;
+    height: 350px;
     margin-top: -15.5%;
     margin-left: 60%;
   }
