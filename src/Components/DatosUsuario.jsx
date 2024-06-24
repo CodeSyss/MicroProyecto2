@@ -1,7 +1,30 @@
 import "../Styles/DatosUsuario.css"
+import {  useState, useEffect} from 'react'
+import { auth, db } from "./firebase";
+import {doc, getDoc} from "firebase/firestore"
 
 
-const DatosUsuario = () => {
+function Profile () {
+
+  const [userDetails, setUserDetails] = useState(null);
+  const fetchUserData = async () => {
+    auth.onAuthStateChanged(async (user) => {
+      console.log(user);
+
+      const docRef = doc(db, "Users", user.uid);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        setUserDetails(docSnap.data());
+        console.log(docSnap.data());
+      } else {
+        console.log("Usuario no esta loggeado");
+      }
+    });
+  };
+  useEffect(() => {
+    fetchUserData();
+  }, []);
+
     return(
         <header>
             <div className="Nombre_Apellido">
@@ -10,11 +33,11 @@ const DatosUsuario = () => {
             </div>
             <div className="Campos_Informacion_Rol">
                 <p className="Rol">Rol Universitario</p>
-                <input type="text" placeholder="Estudiante" /> 
+                <input type="text" placeholder={userDetails.rol} onChange={(e) => setTelf(e.target.value)} /> 
             </div>
             <div className="Campos_Informacion_Telefono">
                 <p className="nro_telefonico">Nro Telefonico</p>
-                <input type="text" placeholder="04142982646" /> 
+                <input type="text" placeholder={userDetails.telefono} onChange={(e) => setTelf(e.target.value)}/> 
             </div>
             <div className="password">
                 <p className="nro_telefonico">Contraseña</p>
@@ -22,7 +45,7 @@ const DatosUsuario = () => {
             </div>
             <div className="correo">
                 <p className="correo_electronico">Correo Electronico</p>
-                <button className="display_email">d.andres@correo.unimet.edu.ve</button>
+                <button className="display_email">{userDetails.email}</button>
             </div>
             <div className="save">
                 <button className="save_button"><span>Guardar Cambios</span></button>
@@ -31,4 +54,4 @@ const DatosUsuario = () => {
     )
 }
 
-export default DatosUsuario;
+export default Profile;
