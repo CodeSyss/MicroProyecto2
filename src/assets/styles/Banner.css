@@ -7,9 +7,10 @@
 }
 
 .imgPoke img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
+  width: 110%;
+
 }
 
 .overlay {
@@ -152,14 +153,14 @@
   }
 
   .imgPoke img {
-    width: 110%;
+    width: 140%;
   }
 }
 
 
 @media (max-width: 795px) {
   .imgPoke img {
-    width: 120%;
+    width: 151%;
   }
 }
 
@@ -173,7 +174,7 @@
   }
 
   .imgPoke img {
-    width: 172%;
+    width: 230%;
   }
 }
 
@@ -189,6 +190,6 @@
   }
 
   .imgPoke img {
-    width: 212%;
+    width: 240%;
   }
 }
