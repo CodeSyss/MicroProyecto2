@@ -59,8 +59,8 @@ const LoginForm = () => {
       });
     }
     function facebookLogin() {
-        const provider = new FacebookAuthProvider();
-        signInWithPopup(auth, provider).then(async (result) => {
+        const providerf = new FacebookAuthProvider();
+        signInWithPopup(auth, providerf).then(async (result) => {
         console.log(result);
         const user = result.user;
         if (result.user) {
