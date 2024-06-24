@@ -4,8 +4,9 @@
 
 .p {
   position: relative;
-  top: -650px;
+  top: -850px;
   }
+
   .SN {
     display: flex;
     flex-direction: column;
@@ -47,7 +48,9 @@
     text-align: center;
     margin-right: 55%;
     margin-left: 15%;
-    margin-top: 0%;
+    margin-top: 3%;
+    position: relative;
+    top: -80px;
   }
 
   .descripcionMision {
@@ -60,6 +63,8 @@
     font-weight: 400;
     margin-right: 55%;
     margin-left: 15%;
+    position: relative;
+    top: -80px;
   }
 
   .vision {
@@ -76,6 +81,9 @@
     margin-right: 20%;
     margin-left: 50%;
     margin-top: 5%;
+    position: relative;
+    top: -180px;
+
   }
 
   .descripcionvision {
@@ -88,6 +96,9 @@
     font-weight: 400;
     margin-right: 20%;
     margin-left: 50%;
+    margin-top: -5%;
+    position: relative;
+    top: -80px;
   }
 
   .imagenMision {
@@ -97,6 +108,7 @@
     height: 413px;
     margin-top: -15%;
     margin-left: 55%;
+    top: -110px;
   }
 
   .imagenVision {
@@ -105,7 +117,7 @@
     height: 413px;
     margin-top: 10%;
     margin-left: 20%;
-    top: -500px;
+    top: -600px;
   }
 
   .barra {

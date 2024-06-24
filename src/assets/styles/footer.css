@@ -1,5 +1,5 @@
 .barraF {
-  margin-top: -38%;
+  margin-top: -50%;
   background-color: #3f4e91;
   justify-content: space-between;
   width: 100%;
@@ -73,12 +73,12 @@
     width: 200px; /* Establece un ancho fijo para el elemento */
     margin-left: 50%;
     margin-top: -5%;
-    transform: translate(-35%, 60%);
+    transform: translate(-35%, 100%);
   }
 
   .redesSociales {
     position: relative;
-    top: 10px;
+    top: 20px;
     margin-left: 24%;
     transform: scale(0.5);
   }

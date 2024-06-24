@@ -3,8 +3,8 @@
 
 .p {
   position: relative;
-  top: -600px;
-  margin-top: 2%;
+  top: -700px;
+  margin-top: 0%;
   }
   .comentariosDestacados {
     color: white;
@@ -21,7 +21,7 @@
 
   /* Comentario 1 */
   .comentario1 {
-    margin-left: 5%;
+    margin-left: 10%;
     margin-top: 2%;
   }
 
@@ -37,7 +37,7 @@
   .comentario3 {
     position: relative;
     top: -380px;
-    margin-left: 70%;
+    margin-left: 66%;
     margin-top: -5%;
   }
 
