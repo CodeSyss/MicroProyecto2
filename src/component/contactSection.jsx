@@ -7,7 +7,7 @@ import planta from "../assets/images/imgContactSection/planta.png";
 
 export default function Nosotros() {
   return (
-    <div>
+    <div className="p">
       <div class="barra">
         <p className="SN">Sobre nosotros</p>
         <p className="descripcionSN">
