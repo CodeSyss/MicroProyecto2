@@ -3,7 +3,7 @@ import Footer from "./component/Footer";
 import Banner from "./component/Banner";
 // import MenuSection from './component/MenuSection';
 // import BuildYourPokeSection from './component/BuildYourPoke';
-// import TestimonialsSection from './component/comments';
+import TestimonialsSection from './component/comments';
 import ContactSection from './component/contactSection';
 
 const App = () => {
@@ -12,9 +12,9 @@ const App = () => {
       <Header />
       <Banner />
       {/* <MenuSection />
-      <BuildYourPokeSection />
-      <TestimonialsSection /> */}
+      <BuildYourPokeSection /> */}
       <ContactSection /> 
+      <TestimonialsSection />
       <Footer />
     </div>
   );
