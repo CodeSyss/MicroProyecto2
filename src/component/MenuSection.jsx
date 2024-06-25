@@ -24,7 +24,7 @@ const MenuSection = () => {
         <button className="arrow left-arrow">{"<"}</button>
 
         <div className="cards-container">
-          <div className="card">
+          <div className="card f">
             <img src={mololove} alt="Mololove" />
             <h2>MOLOLOVE</h2>
             <p className="price">16$</p>

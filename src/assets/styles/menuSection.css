@@ -1,6 +1,7 @@
 .menuSection {
   text-align: center;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden; /* Evitar desplazamiento lateral */
 }
 
 .he {
@@ -9,19 +10,19 @@
 }
 
 .transition {
-  height: 40px; /* Ajusta la altura según sea necesario */
+  height: 40px;
 }
 
 .leaf-container {
   position: relative;
   width: 100%;
-  height: 0; /* Establecer una altura de 0 para evitar que ocupe espacio */
+  height: 0;
 }
 
 .leaf {
   position: absolute;
   top: -250px;
-  right: 0px;
+  right: 0;
   width: 200px;
   height: 300px;
 }
@@ -37,6 +38,7 @@ header h1 {
   align-items: center;
   justify-content: center;
   margin: 20px 0;
+  overflow-x: hidden; /* Evitar desplazamiento lateral */
 }
 
 .arrow {
@@ -48,7 +50,7 @@ header h1 {
 
 .cards-container {
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden; /* Evitar desplazamiento lateral */
 }
 
 .card {
@@ -61,7 +63,6 @@ header h1 {
   width: 250px;
   background-color: #f2f2f2;
   position: relative;
-  
 }
 
 .card img {
@@ -144,8 +145,8 @@ header h1 {
   margin-top: 20px;
 }
 
+/* Responsive adjustments */
 @media (max-width: 1350px) {
-
   .leaf {
     width: 115px;
     height: 250px;
@@ -153,12 +154,10 @@ header h1 {
 }
 
 @media (max-width: 1316px) {
-
   .card {
     margin: 0 15px;
     padding: 20px;
     width: 240px;
-    /* height: 400px; */
   }
 
   .card img {
@@ -174,28 +173,85 @@ header h1 {
   .ingredientes {
     font-size: 0.8em;
   }
-
-  /* .leaf {
-    width: 115px;
-    height: 250px;
-  } */
-  
-  
 }
 
 @media (max-width: 1020px) {
+  .card {
+    width: 200px;
+  }
+
+  .card img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .card h2 {
+    font-size: 1em;
+  }
+
+  .ingredientes {
+    font-size: 0.75em;
+  }
 }
 
-
 @media (max-width: 795px) {
+  .card {
+    width: 180px;
+  }
+
+  .card img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .card h2 {
+    font-size: 0.9em;
+  }
+
+  .ingredientes {
+    font-size: 0.7em;
+  }
 }
 
 @media (max-width: 725px) {
+  .card {
+    width: 160px;
+  }
+
+  .card img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .card h2 {
+    font-size: 0.8em;
+  }
+
+  .ingredientes {
+    font-size: 0.65em;
+  }
 }
 
 @media (max-width: 600px) {
-}
+  .card {
+    width: 140px;
+  }
 
-@media (max-width: 480px) {
+  .card img {
+    height: 80px;
+    width: 80px;
+  }
 
+  .card h2 {
+    font-size: 0.7em;
+  }
+
+  .ingredientes {
+    font-size: 0.6em;
+  }
+
+  .view-menu-btn {
+    padding: 10px 30px;
+    font-size: 0.9em;
+  }
 }

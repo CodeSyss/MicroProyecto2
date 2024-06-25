@@ -11,25 +11,20 @@
 
 .section {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 10px 0;
-}
-
-.section.left {
-  justify-content: flex-start;
   width: 100%;
-  padding-left: 230px;
 }
 
+.section.left,
 .section.right {
-  justify-content: flex-end;
-  width: 100%;
-  padding-right: 200px;
+  justify-content: center;
 }
 
 .step {
   height: 40px;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .search-poke-container {
@@ -44,9 +39,10 @@
   align-items: center;
   background-color: #00d1b2;
   border-radius: 25px;
-  padding: 10px 450px;
-  margin: 20px 0;
-  justify-content: flex-start;
+  padding: 10px;
+  width: 90%;
+  max-width: 800px;
+  justify-content: space-between;
 }
 
 .cta {
@@ -54,7 +50,7 @@
   text-decoration: none;
   font-weight: bold;
   margin-right: 20px;
-  font-size: 40px;
+  font-size: 24px;
 }
 
 .arrow-btn {
@@ -84,104 +80,70 @@
 .leafc {
   position: absolute;
   top: -250px;
-  left: 0%;
+  left: 0;
   width: 200px;
   height: 300px;
 }
 
-
-@media (max-width: 1645px) {
-  
-  .search-poke {
-    padding: 10px 250px;
-    margin: 20px 0;
-  }
-}
-
-@media (max-width: 1255px) {
-  
-  .search-poke {
-    padding: 10px 200px;
-  }
-
-  .section.left {
-    padding-left: 450px;
-  }
-  
-  .section.right {
-    padding-right: 0px;
-  }
-}
-
-
-@media (max-width: 1126px) {
-  
-  .search-poke {
-    padding: 10px 100px;
-  }
-
-  .step {
-    height: 35px;
-    margin: 0 20px;
-  }
-  
-}
-
 @media (max-width: 950px) {
-
   .search-poke {
-    padding: 10px 50px;
+    padding: 10px 20px;
   }
 
   .step {
     height: 30px;
-    margin: 0 20px;
-  }
-
-  .section.left {
-    padding-left: 500px;
+    margin: 0 10px;
   }
 
   .cta {
-    margin-right: 20px;
-    font-size: 34px;
+    font-size: 20px;
   }
-  
-  
 }
 
 @media (max-width: 860px) {
-
   .search-poke {
-    padding: 10px 30px;
+    padding: 10px 15px;
   }
 
   .step {
     height: 25px;
-    margin: 0 20px;
   }
 
-
+  .cta {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 790px) {
   .section {
     flex-direction: column;
-  
+    align-items: center;
   }
 
   .step {
     height: 35px;
-    margin: 3px 280px;
+    margin: 3px 0;
   }
-
-  .section.left {
-    padding-left: 80px;
-  }
-
-
 }
 
 @media (max-width: 480px) {
+  .search-poke {
+    flex-direction: column;
+    padding: 10px 10px;
+  }
 
+  .cta {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrow-btn img {
+    width: 30px;
+    height: 30px;
+  }
 }
