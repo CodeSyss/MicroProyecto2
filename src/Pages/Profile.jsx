@@ -44,6 +44,13 @@ function Profile() {
     }
   }
 
+const HandleSave= async () => {
+   const change = doc(db, "Users", auth.currentUser.uid);
+   await updateDoc(change, {
+    rol: rol,
+    telefono: telf,
+   })
+}
 
   return (
 <>
@@ -67,10 +74,8 @@ function Profile() {
             <input className="box_input"type="text" placeholder={userDetails.telefono} onChange={(e) => setTelf(e.target.value)}/>
             <div className="titulos">Rol</div>
             <input className="box_input"type="text" placeholder={userDetails.rol} onChange={(e) => setRol(e.target.value)} />
+            <button className="logout" onClick={handleLogout}>Logout</button>
           </div>
-          <button className="btn btn-primary" onClick={handleLogout}>
-            Logout
-          </button>
         </>
       ) : (
         <p>Cargando...</p>

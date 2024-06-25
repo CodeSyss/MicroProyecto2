@@ -74,3 +74,20 @@
     position: relative;
     top: 120px;
 }
+
+.logout{
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 10%;
+    background-color: #ffffff;
+    outline: none;
+    border: 2px solid #29CCBA;
+    border-radius: 10px;
+    font-family: "poppins", sans-serif; 
+    font-size: 1.6vw;
+    top: 250px;
+    color:#29CCBA;
+    transition: all 0.5s;
+    right: 25%;
+}
