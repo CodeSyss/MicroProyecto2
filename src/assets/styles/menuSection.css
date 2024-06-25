@@ -1,7 +1,6 @@
 .menuSection {
   text-align: center;
   font-family: "Inter", sans-serif;
-  overflow-x: hidden; /* Evitar desplazamiento lateral */
 }
 
 .he {
@@ -22,7 +21,7 @@
 .leaf {
   position: absolute;
   top: -250px;
-  right: 0;
+  right: 0px;
   width: 200px;
   height: 300px;
 }
@@ -38,7 +37,6 @@ header h1 {
   align-items: center;
   justify-content: center;
   margin: 20px 0;
-  overflow-x: hidden; /* Evitar desplazamiento lateral */
 }
 
 .arrow {
@@ -50,7 +48,7 @@ header h1 {
 
 .cards-container {
   display: flex;
-  overflow-x: hidden; /* Evitar desplazamiento lateral */
+  overflow: hidden;
 }
 
 .card {
@@ -236,22 +234,8 @@ header h1 {
   .card {
     width: 140px;
   }
+}
 
-  .card img {
-    height: 80px;
-    width: 80px;
-  }
+@media (max-width: 480px) {
 
-  .card h2 {
-    font-size: 0.7em;
-  }
-
-  .ingredientes {
-    font-size: 0.6em;
-  }
-
-  .view-menu-btn {
-    padding: 10px 30px;
-    font-size: 0.9em;
-  }
 }

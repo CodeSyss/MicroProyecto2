@@ -1,10 +1,10 @@
 import Header from "../component/Header";
-// import Footer from "../component/Footer";
+import Footer from "../component/Footer";
 import Banner from "../component/Banner";
 import MenuSection from "../component/MenuSection";
-// import BuildYourPokeSection from "../component/BuildYourPoke";
-// import TestimonialsSection from "../component/comments";
-// import ContactSection from "../component/contactSection";
+import BuildYourPokeSection from "../component/BuildYourPoke";
+import TestimonialsSection from "../component/comments";
+import ContactSection from "../component/contactSection";
 
 const LandingPage = () => {
   return (
@@ -12,10 +12,10 @@ const LandingPage = () => {
       <Header />
       <Banner />
       <MenuSection />
-      {/* <BuildYourPokeSection />  */}
-       {/* <ContactSection />
-      <TestimonialsSection /> */}
-      {/* <Footer /> */}
+      <BuildYourPokeSection /> 
+       <ContactSection />
+      <TestimonialsSection />
+      <Footer />
     </div>
   );
 };
