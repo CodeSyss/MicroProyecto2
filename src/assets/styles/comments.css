@@ -161,7 +161,78 @@
     text-align: center;
   }
 
-@media (max-width: 480px) {
+
+@media (max-width: 1500px) {
+
+  
+  .comentario1 {
+    margin-left: 35%;
+    margin-top: 2%;
+  }
+
+  .comentario3,
+  .comentario2 {
+    position: relative;
+    margin-left: 35%;
+    margin-top: 8%;
+  }
+
+  .comentario3 {
+    position: relative;
+    top: -220px;
+  }
+
+  .comentario2 {
+    position: relative;
+    top: -110px;
+  }
+
+  .nombre3,
+  .nombre2,
+  .nombre1 {
+    position: relative;
+    color: black;
+    top: -20px;
+    margin-left: 15%;
+    font-size: 25px;
+  }
+
+  .star3,
+  .star2,
+  .star1 {
+    position: relative;
+    top: -40px;
+    margin-left: 15%;
+    font-size: 25px;
+    width: 150px;
+  }
+
+  
+  .contornoOrdenaYa {
+    position: relative;
+    top: -100px;
+    margin-left: 40%;
+    width: 320px;
+    height: 75px;
+    padding: 17px 95px 34px;
+    box-sizing: border-box;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 100, 108, 1),
+        rgba(248, 100, 108, 1)
+      ),
+      url(https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/3hnpymujaue-607%3A1177?alt=media&token=41c362e5-e333-4a36-b1f0-5c0a1bb54cd4);
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .barra {
+    background-color: #29ccba;
+    justify-content: space-between;
+  }
+  
   .p {
     position: relative;
     top: -700px;
@@ -169,16 +240,10 @@
     }
 
     .comentario1 {
-      margin-left: 50%;
+      margin-left: 35%;
       margin-top: 2%;
     }
 
-    .comentario3,
-    .comentario2 {
-      position: relative;
-      margin-left: 50%;
-      margin-top: -10%;
-    }
 
     .comentario3 {
       position: relative;
@@ -221,7 +286,7 @@
   .contornoOrdenaYa {
     position: relative;
     top: 130px;
-    margin-left: 55%;
+    margin-left: 60%;
     width: 320px;
     height: 75px;
     padding: 17px 95px 34px;
