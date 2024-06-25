@@ -1,1 +1,76 @@
 
+.Profile {
+
+    background: white;
+    width: 2000px;
+
+
+}
+
+
+.Bienvenido{
+    position: relative;
+    top: 20px;
+    font-size: 5vw; 
+    color: #29CCBA;
+    left: 10%;
+}
+.foto_perfil {
+    position: relative;
+    left: 32%;
+    top: 120px;
+    height: auto;
+    max-width: 60%;
+}
+
+.foto_perfil .p_icon {
+    width: 60%;
+    height: auto;
+}
+
+
+.foto_perfil .c_icon {
+    position: absolute;
+    right: 45%;
+    top: 70%;
+    width: 15%;
+    height: auto;
+}
+
+.Nombre_Apellido {
+     color: #29CCBA;
+    font-size: 80px; 
+    font-family: "poppins", sans-serif; 
+    max-width: 60%;
+    position: relative;
+    margin-top: 180px;
+    left: 20%;
+    height: auto;
+    text-align: center;
+}
+
+.Contenedor {
+    position: relative;
+    left: 34%;
+}
+
+.titulos {
+    position: relative;
+    font-size: 20px; 
+    color: #29CCBA;
+    text-decoration: underline;
+    left: 0%;
+    top: 120px;
+}
+
+.box_input {
+    background-color: #ffffff;
+    outline: none;
+    border: 2px solid #29CCBA;
+    border-radius: 10px;
+    padding: 20px 45px 20px 20px;
+    font-family: "poppins", sans-serif; 
+    font-size: 1.6vw;
+    position: relative;
+    top: 120px;
+}
