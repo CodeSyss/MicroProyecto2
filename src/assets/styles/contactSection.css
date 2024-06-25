@@ -145,14 +145,61 @@
     right: 0;
   }
 
-@media (max-width: 480px) {
+@media (max-width: 1500px) {
+  .p {
+    position: relative;
+    top: -300px;
+    }
+
+  .imagenMision {display: none;}
+  .imagenVision {display: none;}
+
+  .vision{
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  .descripcionvision{
+    margin-left: 15%;
+    margin-top: 10%;
+    position: relative;
+    top: -300px;
+  }
+
+  .mision{
+    margin-left: 46%;
+    margin-top: 10%;
+  }
+
+  .descripcionMision{
+    margin-left: 15%;
+    margin-right: 20%;
+  }
+  
+  .planta2 {
+    width: 200px;
+    height: 235px;
+    transform: rotate(180deg);
+    position: absolute;
+    right: 0;
+  }
+
+  .planta2 {display: none;}
+}
+
+@media (max-width: 900px) {
   .p {
     position: relative;
     top: -50px;
     }
 
     .barra {
-        width: 840px;
+      background-color: #29ccba;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .barra {
+        width: 100%;
     }
     
     .descripcionSN {
@@ -168,16 +215,15 @@
 
     .mision {
       text-align: center;
-      margin-left: 85%;
-      margin-top: 5%;
+      margin-left: 50%;
+      margin-top: 10%;
       position: relative;
       top: -60px;
-      left: px;
     }
 
     .descripcionMision {
-      margin-left: 0%;
-      margin-right: -10%;
+      margin-right: 35%;
+      margin-left: 5%;
       margin-top: 5%;
       position: relative;
       top: -60px;
@@ -185,16 +231,17 @@
     }
 
     .imagenMision {
+      display: block;
       position: relative;
       top: -60px;
       margin-top: 10%;
-      margin-left: 50%;
+      margin-left: 30%;
       top: -50px;
     }
 
     .vision {
-      margin-right: 20%;
-      margin-left: 85%;
+      margin-right: 35%;
+      margin-left: 40%;
       margin-top: 5%;
       position: relative;
       top: 0px;
@@ -203,8 +250,8 @@
 
     .descripcionvision {
 
-      margin-left: 0%;
-      margin-right: -10%;
+      margin-left: 5%;
+      margin-right: 35%;
       margin-top: -5%;
       position: relative;
       top: 80px;
@@ -212,14 +259,15 @@
     }
 
     .imagenVision {
+      display: block;
       position: relative;
       margin-top: 10%;
-      margin-left: 50%;
+      margin-left: 30%;
       top: 80px;
     }
 
     .planta2 {
       position: absolute;
-      right: -360px;
+      right: 0%;
     }
 }
