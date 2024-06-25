@@ -41,8 +41,8 @@ export default function FooterPrincipal() {
         <div>
           <img src={logoUnimet} alt="Unimet" className="unimet" />
         </div>
-        <div className="line-1" />
-        <div className="line-2" />
+        {/* <div className="line-1" />
+        <div className="line-2" /> */}
       </div>
     </div>
   );
