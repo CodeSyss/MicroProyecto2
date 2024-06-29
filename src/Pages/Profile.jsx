@@ -3,8 +3,6 @@ import { auth, db } from "./firebase";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import "./Profile.css";
 import Header from "../component/Header-s";
-import foto_perfil from "../assets/images/imgUser/no_perfil.png"
-import change_pfp from "../assets/images/imgUser/change_pfp.png"
 function Profile() {
 
   const [userDetails, setUserDetails] = useState(null);
@@ -44,43 +42,31 @@ function Profile() {
     }
   }
 
-const HandleSave= async () => {
-   const change = doc(db, "Users", auth.currentUser.uid);
-   await updateDoc(change, {
-    rol: rol,
-    telefono: telf,
-   })
-}
 
   return (
 <>
     <Header/>
-    <div className="Profile">
       {userDetails ? (
         <>
-        <div className="foto_perfil">
-        <h1 className="Bienvenido">Bienvenido</h1>
-            <img src={foto_perfil} alt = "Foto de Perfil" className="p_icon"/>
-            <img src={change_pfp} alt = "Cambiar foto de perfil" className="c_icon"/>
-       </div>
           <div className="Contenedor">
             <div className="titulos">Nombre</div>
-            <input className="box_input"type="text" placeholder={userDetails.nombre} onChange={(e) => setName(e.target.value)} />
+            <p className="box_input">{userDetails.nombre}</p>
             <div className="titulos">Apellido</div>
-            <input className="box_input"type="text" placeholder={userDetails.apellido} onChange={(e) => setLast_name(e.target.value)}/>
+            <p className="box_input">{userDetails.apellido}</p>
             <div className="titulos">Correo Electronico</div>
-            <input className="box_input"type="text" placeholder={userDetails.email}/>
+            <p className="box_input">{userDetails.email}</p>
             <div className="titulos">Telefono</div>
-            <input className="box_input"type="text" placeholder={userDetails.telefono} onChange={(e) => setTelf(e.target.value)}/>
+            <p className="box_input">{userDetails.telf}</p>
             <div className="titulos">Rol</div>
-            <input className="box_input"type="text" placeholder={userDetails.rol} onChange={(e) => setRol(e.target.value)} />
-            <button className="logout" onClick={handleLogout}>Logout</button>
+            <p className="box_input">{userDetails.rol}</p>
+            <button className="btn btn-primary" onClick={handleLogout}>
+            Logout
+          </button>
           </div>
         </>
       ) : (
         <p>Cargando...</p>
       )}
-    </div>
 </>
   );
 }

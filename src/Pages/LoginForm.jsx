@@ -26,7 +26,7 @@ const LoginForm = () => {
                 position: "top-center",
               });
             //pagina a la que manda despues del login
-            window.location.href='/Profile';
+            window.location.href='/LandingPage';
             
         } catch (error) {
             console.log(error.message);
@@ -54,7 +54,7 @@ const LoginForm = () => {
           toast.success("Usuario loggeado correctamente!", {
             position: "top-center",
           });
-          window.location.href = "/Profile";
+          window.location.href = "/LandingPage";
         }
       });
     }
@@ -75,7 +75,7 @@ const LoginForm = () => {
           toast.success("Usuario loggeado correctamente!", {
             position: "top-center",
           });
-          window.location.href = "/Profile";
+          window.location.href = "/LandingPage";
         }
       });
     }

@@ -51,42 +51,42 @@ const RegisterForm = () => {
 
     return (
     <>
-    <Header/>
-    <div className="wrapper-r">
-        
-        <form onSubmit={handleRegister}>
-            <div className="wrapper-out-r">
-                <h1> <a href="/login"><IoIosArrowBack className="icon-r" /></a> <FaUser className='icon-r2'/></h1>
-            </div>
-            <div className="input-box-r">
-                <input type="text" placeholder="Nombre" onChange={(e) => setFname(e.target.value)} required/>
-            </div>
-            <div className="input-box-r">
-                <input type="text" placeholder="Apellido" onChange={(e) => setLname(e.target.value)} required/>
-            </div>
-            <div className="input-box-r">
-                <input type="text" placeholder="Rol de la universidad" onChange={(e) => setRol(e.target.value)} required/>
-                
-            </div>
-            <div className="input-box-r">
-                <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required/>
-            </div>
-            <div className="input-box-r">
-                <input type="int" placeholder="Telefono" onChange={(e) => setTelf(e.target.value)} required/>
-            </div>
-            <div className="input-box-r">
-                <input type="password" placeholder="Contraseña" onChange={(e) => setPassword(e.target.value)} required/>
-           
-            </div>
-            <button type="submit">Registrate</button>
-
-            <div className="register_link-r">
-                <p>¿Ya tienes cuenta?  <a href="/login">Inicia Sesión</a></p>
-            </div>
-           
+      <Header/>
+      <div className="wrapper-r">
+          
+          <form onSubmit={handleRegister}>
+              <div className="wrapper-out-r">
+                  <h1> <a href="/login"><IoIosArrowBack className="icon-r" /></a> <FaUser className='icon-r2'/></h1>
+              </div>
+              <div className="input-box-r">
+                  <input type="text" placeholder="Nombre" onChange={(e) => setFname(e.target.value)} required/>
+              </div>
+              <div className="input-box-r">
+                  <input type="text" placeholder="Apellido" onChange={(e) => setLname(e.target.value)} required/>
+              </div>
+              <div className="input-box-r">
+                  <input type="text" placeholder="Rol de la universidad" onChange={(e) => setRol(e.target.value)} required/>
+                  
+              </div>
+              <div className="input-box-r">
+                  <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required/>
+              </div>
+              <div className="input-box-r">
+                  <input type="int" placeholder="Telefono" onChange={(e) => setTelf(e.target.value)} required/>
+              </div>
+              <div className="input-box-r">
+                  <input type="password" placeholder="Contraseña" onChange={(e) => setPassword(e.target.value)} required/>
             
-        </form>
-        </div>
+              </div>
+              <button type="submit">Registrate</button>
+
+              <div className="register_link-r">
+                  <p>¿Ya tienes cuenta?  <a href="/login">Inicia Sesión</a></p>
+              </div>
+            
+              
+          </form>
+          </div>
         </>
 );
 }

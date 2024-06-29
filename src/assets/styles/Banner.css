@@ -1,0 +1,195 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 100px; /* Añade margen superior para evitar que el banner se superponga con el header */
+}
+
+.imgPoke img {
+  height: 100%;
+  object-fit: cover;
+  width: 110%;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3); /* oscurecer ligeramente la imagen de fondo */
+  text-align: center;
+}
+
+.title {
+  color: rgb(236, 236, 236);
+  font-size: 4.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 20px 20px 19px rgba(0, 0, 0, 0.5);
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  padding: 7px;
+  box-shadow: 0 7px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 70%;
+  max-width: 800px;
+  height: 67px;
+}
+
+.search-bar input {
+  border: none;
+  padding: 20px;
+  outline: none;
+  border-radius: 45px 0 0 45px;
+  font-size: 1.5em;
+  width: 100%;
+  flex-grow: 1;
+  height: 20px;
+}
+
+.search-bar button {
+  border: none;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.search-bar button img {
+  height: 40px;
+}
+
+::placeholder {
+  color: #c9c6c6;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 20px;
+}
+
+.arrow-down img {
+  height: 30px;
+  animation: bounce 2s infinite;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.arrow-left,
+.arrow-right {
+  cursor: pointer;
+}
+
+.arrow-left img,
+.arrow-right img {
+  height: 40px;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+@media (max-width: 1020px) {
+  .banner {
+    margin-top: 80px;
+  }
+
+  .title {
+    font-size: 2.7em;
+  }
+
+  .search-bar {
+    height: 48px;
+  }
+
+  .search-bar input {
+    font-size: 1em;
+  }
+
+  .search-bar button img {
+    height: 25px;
+  }
+
+  .arrow-down img {
+    height: 20px;
+  }
+
+  .arrow-left img,
+  .arrow-right img {
+    height: 25px;
+  }
+
+  .imgPoke img {
+    width: 140%;
+  }
+}
+
+
+@media (max-width: 795px) {
+  .imgPoke img {
+    width: 151%;
+  }
+}
+
+@media (max-width: 725px) {
+  .title {
+    font-size: 2.4em;
+  }
+
+  .search-bar {
+    height: 40px;
+  }
+
+  .imgPoke img {
+    width: 230%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.9em;
+  }
+
+  .imgPoke img {
+    width: 240%;
+  }
+}
